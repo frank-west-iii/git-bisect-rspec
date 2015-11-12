@@ -7,7 +7,13 @@ class MyMath
   end
 
   def complicated_math_equation
-    ((0.06/x)/x) * ((Math.log(1+(14000/200)*(1-(0.06)**y)))/Math.log(1+0.06))
+    (
+      (0.06/x) /x ) *
+      (
+        (
+          Math.log(1+(14000/200)*(1-(0.06)**y))
+    ) /
+      Math.log(1+0.06))
   end
 
   def add
