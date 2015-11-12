@@ -21,4 +21,8 @@ class MyMath
   def multiply
     x * y
   end
+
+  def divide
+    x / y
+  end
 end

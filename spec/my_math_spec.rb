@@ -27,4 +27,10 @@ describe MyMath do
       expect(subject.multiply).to eq(10950)
     end
   end
+
+  describe '#division' do
+    it 'divides the numbers' do
+      expect(subject.divide).to eq(12)
+    end
+  end
 end
