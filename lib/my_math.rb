@@ -17,4 +17,8 @@ class MyMath
   def subtract
     x - y
   end
+
+  def multiply
+    x * y
+  end
 end

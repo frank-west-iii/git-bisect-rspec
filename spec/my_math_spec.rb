@@ -21,4 +21,10 @@ describe MyMath do
       expect(subject.subtract).to eq(335)
     end
   end
+
+  describe '#multiply' do
+    it 'multiplies the numbers' do
+      expect(subject.multiply).to eq(10950)
+    end
+  end
 end
