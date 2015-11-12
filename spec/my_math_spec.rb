@@ -2,23 +2,23 @@ require 'rspec'
 require_relative '../lib/my_math'
 
 describe MyMath do
-  subject { described_class }
+  subject { described_class.new(365, 30) }
 
   describe '#complicated_math_equation' do
     it 'should calculate the correct values' do
-      expect(subject.complicated_math_equation(365, 30)).to eq(0.0004008509986404663)
+      expect(subject.complicated_math_equation).to eq(0.0004008509986404663)
     end
   end
 
   describe '#add' do
     it 'add the numbers' do
-      expect(subject.add(365, 30)).to eq(395)
+      expect(subject.add).to eq(395)
     end
   end
 
   describe '#subtract' do
     it 'subtracts the numbers' do
-      expect(subject.subtract(365, 30)).to eq(335)
+      expect(subject.subtract).to eq(335)
     end
   end
 end

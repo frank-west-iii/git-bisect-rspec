@@ -1,13 +1,20 @@
 class MyMath
-  def self.complicated_math_equation(x, y)
-    ((0.06/x)/y) * ((Math.log(1+(14000/200)*(1-(0.06)**y)))/Math.log(1+0.06))
+  attr_reader :x, :y
+
+  def initialize(x, y)
+    @x = x
+    @y = y
   end
 
-  def self.add(x, y)
+  def complicated_math_equation
+    ((0.06/x)/x) * ((Math.log(1+(14000/200)*(1-(0.06)**y)))/Math.log(1+0.06))
+  end
+
+  def add
     x + y
   end
 
-  def self.subtract(x, y)
+  def subtract
     x - y
   end
 end
