@@ -15,4 +15,10 @@ describe MyMath do
       expect(subject.add(365, 30)).to eq(395)
     end
   end
+
+  describe '#subtract' do
+    it 'subtracts the numbers' do
+      expect(subject.subtract(365, 30)).to eq(335)
+    end
+  end
 end
